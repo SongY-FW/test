@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style >
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee
+        }
+
+
+        .flex{
+            display: flex;
+        }
+        .flex1{
+            flex:1;
+
+        }
+        .fdc{
+            flex-direction:column;
+        }
+        .js-b{
+            justify-content:space-between;
+        }
+        .js-c{
+            justify-content:center;
+        }
+        .al-c{
+            align-items:center;
+        }
+        .bgc{
+            background-color: white;
+        }
+
+        .qpl{
+            width: 180px;
+            height: 100vh;
+            background-color: white
+        }
+        .qpr{
+
+        }
+        .top{
+            height: 80px;
+            width: 100%;
+
+
+
+        }
+        .qprb{
+           width: 100%;
+
+
+        }
+        .rbl{
+            margin:8px 8px 0px 8px;
+        }
+        .rbrt4{
+
+
+        }
+        .rbtb3{
+
+           margin-bottom:8px;
+        }
+        .rbrb{
+            margin-bottom:8px;
+        }
+        .rbr{
+            margin:8px 8px 0px 0px;
+        }
+        .navst{
+            height: 80px;
+            border-bottom:1px solid gray;
+        }
+        ul li{
+            list-style:none;
+            border-bottom:1px solid gray;
+            height: 38px;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 15px;
+            font-size:16px;
+            line-height:38px;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="qpl flex fdc">
+            <nav class="navst flex js-c al-c ">
+                <img src="https://kangwenchang.com/logo.png" alt="" width="40px" height="40px">
+                <span style="margin-left:15px">康文昌</span>
+            </nav>
+            <ul>
+                <li><a href="#">导航</a></li>
+                <li><a href="#">导航</a></li>
+                <li><a href="#">导航</a></li>
+                <li><a href="#">导航</a></li>
+                <li><a href="#">导航</a></li>
+            </ul>
+
+        </div>
+        <div class="qpr flex flex1 fdc">
+            <div class="top bgc"></div>
+            <div class="qprb flex1 flex">
+                <div class="rbl flex fdc " style="flex:6;">
+                    <div class="rbrt flex js-b " style="flex:1;">
+                        <div class="flex1 rbrt4 bgc" style="margin-right:4px;"></div>
+                        <div class="flex1 rbrt4 bgc" style="margin: 0 4px;"></div>
+                        <div class="flex1 rbrt4 bgc" style="margin: 0 4px;" ></div>
+                        <div class="flex1 rbrt4 bgc" style="margin-left:4px;"></div>
+                    </div>
+                    <div class="flex rbtb fdc" style="flex:5;">
+                        <div class="flex1 rbtb3 bgc"></div>
+                        <div class="flex1 rbtb3 bgc"></div>
+                        <div class="flex1 rbtb3 bgc"></div>
+                        <div class="flex1 rbtb3 bgc"></div>
+                        <div class="flex1 rbtb3 bgc"></div>
+                    </div>
+                </div>
+                <div class="rbr flex fdc" style="flex:2;">
+                    <div class="rbrb bgc" style="flex:2;"></div>
+                    <div class="rbtb bgc" style="flex:4;"></div>
+                    <div class="rbtb" style="flex:4;"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

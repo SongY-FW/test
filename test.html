@@ -144,7 +144,22 @@
 
         </div>
     </div>
+    <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js");
+    });
+  }
+  let inWechatMP =
+    navigator.userAgent.match(/micromessenger/i) ||
+    navigator.userAgent.match(/miniprogram/i) ||
+    window.__wxjs_environment === "miniprogram";
 
+  if (inWechatMP) {
+    let w = document.getElementById("mp");
+    w.sheet.rules[0].style.display = "inline";
+  }
+</script>
 
 </body>
 </html>

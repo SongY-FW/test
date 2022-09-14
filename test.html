@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="测试页面">
     <link rel="icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/test/manifest.json" />
     <title>康文昌</title>
     <style >
         *{
@@ -147,7 +147,7 @@
     <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
-      navigator.serviceWorker.register("sw.js");
+      navigator.serviceWorker.register("/test/sw.js");
     });
   }
   let inWechatMP =
